@@ -1,3 +1,3 @@
-buttonClick : function(button) {
+function buttonClick(button) {
   alert(button.textContent)
 }
