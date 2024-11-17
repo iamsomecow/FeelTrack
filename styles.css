@@ -1,4 +1,16 @@
 button {
-  height: 40px;
-  width: 50px;
+  height: 80px;
+  width: 100px;
+}
+.red {
+  color: Red;
+}
+.yellow {
+  color: Yellow;
+}
+.blue {
+  color: Blue;
+}
+.green {
+  color: Green;
 }
