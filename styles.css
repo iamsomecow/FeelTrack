@@ -1,16 +1,17 @@
 button {
   height: 80px;
   width: 100px;
+  text-align: center;
 }
 .red {
-  color: Red;
+  backround-color: Red;
 }
 .yellow {
-  color: Yellow;
+  backround-color: Yellow;
 }
 .blue {
-  color: Blue;
+  backround-color: Blue;
 }
 .green {
-  color: Green;
+  backround-color: Green;
 }
