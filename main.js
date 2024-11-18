@@ -26,6 +26,7 @@ function save() {
   localStorage.setItem('data', JSON.stringify(data));
   if (data.hasOwnProperty(currDateFormated)) {
       document.getElementById("todaysEmotion").innerHTML = data[currDateFormated].Emotion;
+      document.getElementById("todaysReason").innerHTML = data[currDateFormated].Reason;
     }
 }  
 function buttonClick(button) {
@@ -36,6 +37,18 @@ function buttonClick(button) {
   } else {
     data[currDateFormated] = dataTemplate;
     data[currDateFormated].Emotion = button.textContent;
+    save();
+  }
+}
+function inputClick() {
+  var input = document.getElementById("reasonInput").value
+  alert(input.textContent)
+  if (data.hasOwnProperty(currDateFormated)) {
+    data[currDateFormated].Emotion = input.textContent;
+    save();
+  } else {
+    data[currDateFormated] = dataTemplate;
+    data[currDateFormated].Emotion = input.textContent;
     save();
   }
 }
