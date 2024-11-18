@@ -31,7 +31,7 @@ function save() {
     }
 }  
 function buttonClick(button) {
-  alert(button.textContent)
+  alert(button.textContent);
   if (data.hasOwnProperty(currDateFormated)) {
     data[currDateFormated].Emotion = button.textContent;
     save();
@@ -42,14 +42,14 @@ function buttonClick(button) {
   }
 }
 function inputClick() {
-  var input = document.getElementById("reasonInput").value
-  alert(input.textContent)
+  var input = document.getElementById("reasonInput").value;
+  alert(input);
   if (data.hasOwnProperty(currDateFormated)) {
-    data[currDateFormated].Reason = input.textContent;
+    data[currDateFormated].Reason = input;
     save();
   } else {
     data[currDateFormated] = dataTemplate;
-    data[currDateFormated].Reason = input.textContent;
+    data[currDateFormated].Reason = input;
     save();
   }
 }
