@@ -1,7 +1,7 @@
 let data;
 const dataTemplate = {
-  Emotion : 'unset'
-  Reason : 'unset'
+  "Emotion" : 'unset'
+  "Reason" : 'unset'
 }
 const currDate = new Date();
 const currDateFormated = (currDate.getDate().toString() + '/' + currDate.getMonth().toString()+ '/' + currDate.getFullYear().toString());
