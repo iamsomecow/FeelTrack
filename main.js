@@ -25,7 +25,7 @@ function save() {
 }  
 function buttonClick(button) {
   alert(button.textContent)
-  if (data.hasOwnProperty(currDateFormated) {
+  if (data.hasOwnProperty(currDateFormated)) {
     data[currDateFormated].Emotion = button.textContent;
     save();
   } else {
