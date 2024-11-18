@@ -12,6 +12,11 @@ function load() {
     if (data.hasOwnProperty(currDateFormated)) {
       document.getElementById("todaysEmotion").innerHTML = data[currDateFormated].Emotion;
     }
+    let history;
+    Object.values(data).forEach(value => {
+      history += (value.Emotion + '<br/>' + value.Reason + '<br/>');
+      document.getElementById("emotionHistory").innerHTML = history;
+    })
   } else {
     data = {};
   }
