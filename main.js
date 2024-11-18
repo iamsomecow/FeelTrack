@@ -11,6 +11,7 @@ function load() {
     data = JSON.parse(localStorage.getItem('data'));
     if (data.hasOwnProperty(currDateFormated)) {
       document.getElementById("todaysEmotion").innerHTML = data[currDateFormated].Emotion;
+      document.getElementById("todaysReason").innerHTML = data[currDateFormated].Reason;
     }
     let history;
     Object.values(data).forEach(value => {
@@ -44,11 +45,11 @@ function inputClick() {
   var input = document.getElementById("reasonInput").value
   alert(input.textContent)
   if (data.hasOwnProperty(currDateFormated)) {
-    data[currDateFormated].Emotion = input.textContent;
+    data[currDateFormated].Reason = input.textContent;
     save();
   } else {
     data[currDateFormated] = dataTemplate;
-    data[currDateFormated].Emotion = input.textContent;
+    data[currDateFormated].Reason = input.textContent;
     save();
   }
 }
