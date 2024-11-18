@@ -9,7 +9,7 @@ function load() {
   if(localStorage.getItem('data') !== null)
   {
     data = JSON.parse(localStorage.getItem('data'));
-    if (data.hasOwnProperty(currDateFormated) {
+    if (data.hasOwnProperty(currDateFormated)) {
       document.getElementById("todaysEmotion").innerHTML = data[currDateFormated].Emotion;
     }
   } else {
@@ -18,8 +18,8 @@ function load() {
 }
 load();
 function save() {
-  localStorage.setItem('data', data);
-  if (data.hasOwnProperty(currDateFormated) {
+  localStorage.setItem('data', JSON.stringify(data));
+  if (data.hasOwnProperty(currDateFormated)) {
       document.getElementById("todaysEmotion").innerHTML = data[currDateFormated].Emotion;
     }
 }  
