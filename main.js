@@ -1,6 +1,6 @@
 let data;
 const dataTemplate = {
-  "Emotion" : 'unset'
+  "Emotion" : 'unset',
   "Reason" : 'unset'
 }
 const currDate = new Date();
